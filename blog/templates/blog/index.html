@@ -1,0 +1,85 @@
+{% extends 'blog/basic.html' %}
+{% block css %}
+
+
+
+
+
+
+
+
+
+{% endblock css %}
+
+
+{% block body %}
+{% load static %}
+
+<div class="max-width-2 m-auto">
+    <hr>
+</div>
+<div class="content max-width-2 m-auto">
+    <div class="content-left">
+
+        <h2>iBlog heaven for Bloggers</h2>
+        <p>iBlog is a website where you can put your Blog and Earn good amount i recommend you to must concentrate on
+            this offer - Don't miss any reason Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+            numquam ullam, culpa, non error reiciendis necessitatibus cum quo tempora labore inventore eveniet fugiat
+            dolor enim iure quia expedita et aliquam commodi. In, eos tempora. Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Ipsa omnis est voluptas aliquid pariatur eaque, qui laborum ipsum minima ab, illo dolores?
+        </p>
+    </div>
+    <div class="content-right">
+        <img class="img" src="{% static '/blog/1.png' %}" alt="Not">
+    </div>
+</div>
+<div class="max-width-2 m-auto my-2">
+    <hr>
+</div>
+<div class="home-articles max-width-2 m-auto font2">
+    <div class="font2 year-box">
+        <h4>Year</h4>
+        <div>
+            <input type="radio" name="year" id=""> 2020
+        </div>
+        <div>
+            <input type="radio" name="year" id=""> 2021
+        </div>
+    </div>
+    <h3 class="my-2">Featured Articles</h3>
+    <div class="home-article">
+
+        <div class="home-article-img">
+            <img src="{% static '/blog/11.svg' %}" alt="Artilce">
+        </div>
+        <div class="home-article-content font1">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+            <span>Author Name</span>
+            <span>26 Dec 2020</span>
+        </div>
+    </div>
+    <div class="home-article">
+
+        <div class="home-article-img">
+            <img src="{% static '/blog/11.svg' %}" alt="Artilce">
+        </div>
+        <div class="home-article-content font1">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+            <span>Author Name</span>
+            <span>26 Dec 2020</span>
+        </div>
+    </div>
+    <div class="home-article">
+
+        <div class="home-article-img">
+            <img src="{% static '/blog/11.svg' %}" alt="Artilce">
+        </div>
+        <div class="home-article-content font1">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+            <span>Author Name</span>
+            <span>26 Dec 2020</span>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

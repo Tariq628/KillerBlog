@@ -1,0 +1,95 @@
+{% extends 'blog/basic.html' %}
+{% block css %}
+.post-img{
+    overflow:hidden;
+    height:400px;
+    opacity:0.3;
+    margin-top:14px;
+
+}
+.post-img img{
+    width:100%;
+}
+.blog-post-content h2{
+    text-align:center;
+
+}
+.row{
+    display:flex;
+}
+.more-post{
+    flex-direction:column;
+    align-items:center;
+}
+.home-article-content{
+    text-align:center;
+}
+.blogpost-meta{
+    display:flex;
+    background-color:red;
+    justify-content:space-between;
+}
+
+
+
+
+
+
+
+{% endblock css %}
+
+{% block body %}
+{% load static %}
+
+<div class="post-img">
+    <img src="{% static '/blog/11.svg' %}" alt="">
+</div>
+
+
+
+<div class="blog-post-content max-width-3 m-auto my-2">
+    <h2 class="font1">iBlog heaven for Bloggers</h2>
+    <p class="font1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam voluptatum maxime esse hic, officia reprehenderit laborum, ducimus eos saepe aspernatur repudiandae dignissimos earum illo quas excepturi laboriosam inventore. Accusantium odit ab vero et laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat, est nihil dolor ullam tenetur quidem sit eveniet numquam similique consequuntur eum doloribus labore ipsam quam soluta doloremque reprehenderit accusamus placeat qui maxime dolorum quo asperiores! Temporibus, similique. Ad corporis at, doloribus enim deserunt natus vel asperiores repellat iusto commodi, non maiores facere, repellendus quas obcaecati impedit. Iure ea earum totam blanditiis? Commodi libero corporis, ullam impedit in illo maxime officiis adipisci deleniti neque nam pariatur expedita sequi voluptatibus beatae amet minus accusamus laboriosam a rem eligendi velit perspiciatis? Omnis sit ex quod eaque numquam voluptate mollitia distinctio eligendi iste?</p>
+</div>
+
+
+<div class="max-width-2 m-auto my-2"><hr></div>
+<div class="home-articles max-width-2 m-auto font2">
+    <h2>People who read this also read</h2>
+    <div class="row">
+    <div class="home-article more-post">
+
+        <div class="home-article-img">
+            <img src="{% static '/blog/1.png' %}" alt="Artilce">
+        </div>
+        <div class="home-article-content font1">
+            <h3>Lorem ipsum dolor sit amet consectetur..</h3>
+            <div>Author Name</div>
+            <div>26 Dec | 6 min read</div>
+        </div>
+    </div>
+    <div class="home-article more-post">
+
+        <div class="home-article-img">
+            <img src="{% static '/blog/2.png' %}" alt="Artilce">
+        </div>
+        <div class="home-article-content font1">
+            <h3>Lorem ipsum dolor sit amet consectetur..</h3>
+            <div>Author Name</div>
+            <div>26 Dec | 6 min read</div>
+        </div>
+    </div>
+    <div class="home-article more-post">
+
+        <div class="home-article-img">
+            <img src="{% static '/blog/3.png' %}" alt="Artilce">
+        </div>
+        <div class="home-article-content font1">
+            <h3>Lorem ipsum dolor sit amet consectetur..</h3>
+            <div>Author Name</div>
+            <div>26 Dec | 6 min read</div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock body %}

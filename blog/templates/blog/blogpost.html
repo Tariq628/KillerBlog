@@ -1,42 +1,8 @@
 {% extends 'blog/basic.html' %}
-{% block css %}
-.post-img{
-    overflow:hidden;
-    height:400px;
-    opacity:0.3;
-    margin-top:14px;
-
-}
-.post-img img{
-    width:100%;
-}
-.blog-post-content h2{
-    text-align:center;
-
-}
-.row{
-    display:flex;
-}
-.more-post{
-    flex-direction:column;
-    align-items:center;
-}
-.home-article-content{
-    text-align:center;
-}
-.blogpost-meta{
-    display:flex;
-    background-color:red;
-    justify-content:space-between;
-}
-
-
-
-
-
-
-
-{% endblock css %}
+{% block csslink %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'blog/css/blogpost.css' %}">
+{% endblock csslink %}
 
 {% block body %}
 {% load static %}

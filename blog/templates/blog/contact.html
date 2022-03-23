@@ -24,13 +24,12 @@
                 <input name="email" type="email" placeholder="Enter Your Email">
             </div>
             <div class="form-box">
-                <textarea name="textarea" placeholder="How May We Help You" name="" id="" cols="30"
-                    rows="10"></textarea>
+                    {{ form.media }}
+                    {{ form.as_p }}
             </div>
             <div class="form-box">
                 <button type="submit" class="nav-btn">Button</button>
             </div>
-
         </form>
     </div>
 

@@ -12,8 +12,8 @@ def contact(request):
         name = request.POST.get("name", "default")
         phone = request.POST.get("phone", "default")
         email = request.POST.get("email", "default")
-        textarea = request.POST.get("textarea", "default")
-        contact = Contact(name=name, phone=phone, email=email, textarea=textarea)
+        content = request.POST.get("content", "default")
+        contact = Contact(name=name, phone=phone, email=email, content=content)
         contact.save()
         thank = True
     return render(request, "blog/contact.html", {"thank":thank, "form":form})

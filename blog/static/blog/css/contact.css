@@ -12,7 +12,7 @@
     }
     .content-contact::after{
     content:"";
-    background-image: url('/../static/blog/11.svg');
+    background-image: url('/../static/blog/img/11.svg');
     position:absolute;
     top:0;
     width: 100%;
